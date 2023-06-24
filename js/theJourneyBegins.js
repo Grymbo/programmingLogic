@@ -13,3 +13,12 @@ function solution1( param1, param2) {
 
     return century;
  }
+
+ /* 3) Given de string. Check if it is a palindrome*/
+ function solution3(inputString) {
+    const regex = /[^a-z0-9]/gi;
+    const newString = inputString.replace(regex, '').toLowerCase();
+    const newString2 = newString.split('').reverse().join('');
+
+    return newString === newString2;
+ }
